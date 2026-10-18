@@ -215,4 +215,34 @@ body {
   }
 }
 
+/* ==========================================================================
+   Hero Banner Height Optimization (Reduced from 910px to 650px)
+   ========================================================================== */
+.rts-banner-area-one {
+  height: 650px !important;
+  min-height: 600px !important;
+}
+
+.banner-style-one-wrapper-inner {
+  padding-top: 20px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .rts-banner-area-one {
+    height: 560px !important;
+    min-height: 520px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rts-banner-area-one {
+    height: auto !important;
+    min-height: 480px !important;
+    padding: 60px 0 !important;
+  }
+  .banner-style-one-wrapper-inner {
+    padding-top: 0 !important;
+  }
+}
+
 
