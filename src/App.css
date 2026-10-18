@@ -1,0 +1,218 @@
+/* Custom app styles if needed */
+
+/* About Section - T&S Consulting Enhancements */
+.about-area-inner-wrapper-thumbnail .experience .title {
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.about-area-inner-wrapper-thumbnail .experience p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #050d20;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.about-content-style-one .quote-and-review-area .quote-area {
+  align-items: flex-start;
+}
+
+.about-content-style-one .quote-and-review-area .quote-area p.quote {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+/* Projects / Why Choose Us - Equal Card Box Sizing */
+.single-case-style-one .inner-content {
+  width: 248px !important;
+  max-width: 248px !important;
+  height: 165px !important;
+  min-height: 165px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  box-sizing: border-box !important;
+  border-radius: 6px !important;
+}
+
+.single-case-style-one .inner-content span {
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-bottom: 4px !important;
+  color: var(--color-primary) !important;
+  display: block !important;
+}
+
+.single-case-style-one .inner-content .title {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin-top: 0 !important;
+  margin-bottom: 6px !important;
+  min-height: 44px !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+.single-case-style-one .inner-content .desc,
+.single-case-style-one .inner-content p {
+  font-size: 12.5px !important;
+  line-height: 1.45 !important;
+  color: #666666 !important;
+  margin: 0 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+/* FAQ Section - Force 1-line title with white-space nowrap (original font size preserved) */
+.faq-left-area-main .title.faq-nowrap-title,
+.faq-left-area-main .title.faq-nowrap-title .split-line,
+.faq-left-area-main .title.faq-nowrap-title div {
+  white-space: nowrap !important;
+}
+
+/* Space above contact form box */
+.contact-form-style-one {
+  margin-top: 83px !important;
+}
+
+/* ==========================================================================
+   Section Spacing Optimization - Eliminates 240px Empty Voids
+   ========================================================================== */
+.rts-section-gap {
+  padding: 60px 0 !important;
+}
+
+.rts-section-gapTop {
+  padding-top: 60px !important;
+}
+
+.rts-section-gapBottom {
+  padding-bottom: 60px !important;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .rts-section-gap {
+    padding: 48px 0 !important;
+  }
+  .rts-section-gapTop {
+    padding-top: 48px !important;
+  }
+  .rts-section-gapBottom {
+    padding-bottom: 48px !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .rts-section-gap {
+    padding: 36px 0 !important;
+  }
+  .rts-section-gapTop {
+    padding-top: 36px !important;
+  }
+  .rts-section-gapBottom {
+    padding-bottom: 36px !important;
+  }
+}
+
+/* Footer spacing optimization */
+.rts-footer-one.pt--100 {
+  padding-top: 60px !important;
+}
+.rts-footer-one .container.pb--80 {
+  padding-bottom: 45px !important;
+}
+
+/* Internal component spacing adjustments */
+.vm-split-wrapper {
+  margin-bottom: 35px !important;
+}
+
+/* Space above Consulting Expertise section */
+.consulting-expertise-area {
+  padding-top: 32px !important;
+}
+
+/* ==========================================================================
+   Smooth Scrolling & Navbar Anchor Offsets
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip !important;
+}
+
+body {
+  overflow-x: clip !important;
+}
+
+[id] {
+  scroll-margin-top: 90px;
+}
+
+/* ==========================================================================
+   Refined Micro-Interactions & Hover Polish
+   ========================================================================== */
+/* Smooth button transitions without layout shifts */
+.rts-btn {
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease !important;
+}
+
+.rts-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 77, 156, 0.16);
+}
+
+.rts-btn:active {
+  transform: translateY(0);
+}
+
+/* Service & Blog cards gentle lift */
+.single-service-style-one,
+.single-blog-style-one,
+.single-case-style-one {
+  transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease !important;
+}
+
+.single-service-style-one:hover,
+.single-blog-style-one:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 10px 24px rgba(6, 20, 38, 0.08) !important;
+}
+
+/* Card images subtle zoom on hover */
+.thumbnail-case img,
+.thumbnail-blog img {
+  transition: transform 0.4s ease !important;
+}
+
+.single-case-style-one:hover .thumbnail-case img,
+.single-blog-style-one:hover .thumbnail-blog img {
+  transform: scale(1.03) !important;
+}
+
+/* Navigation links color transition */
+.header-one .nav-area ul li a {
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+

@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Header White Theme & T&S Logo Styles
+   ========================================================================== */
+
+/* Main Header Container - White Theme Guaranteed Sticky */
+header.header-one,
+header.header-one.header-white,
+header.header-one.header-relative {
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  background: rgba(255, 255, 255, 0.88) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border-bottom: 1px solid rgba(7, 20, 49, 0.08) !important;
+  box-shadow: 0 2px 18px rgba(7, 20, 49, 0.05) !important;
+  z-index: 1100 !important;
+  transition: box-shadow 0.25s ease, background 0.25s ease !important;
+}
+
+/* Scrolled / Sticky State */
+header.header-one.sticky,
+header.header-one.header-white.sticky,
+header.header--sticky.sticky {
+  position: sticky !important;
+  top: 0 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border-bottom: 1px solid rgba(7, 20, 49, 0.08) !important;
+  box-shadow: 0 4px 25px rgba(7, 20, 49, 0.12) !important;
+}
+
+/* Header Wrapper */
+.header-one.header-white .header-wrapper-main {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Area & Image */
+.header-one.header-white .logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.header-one.header-white .header-logo-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 4px 0;
+}
+
+.header-one.header-white .header-logo-img {
+  height: 52px;
+  max-height: 56px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+  display: block;
+  /* Delicate drop-shadow ensures the white '&' between T and S pops with depth on white background */
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.22)) drop-shadow(0 0 1px rgba(0, 0, 0, 0.12));
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.header-one.header-white .header-logo-link:hover .header-logo-img {
+  transform: scale(1.04);
+  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.26)) drop-shadow(0 0 1px rgba(0, 0, 0, 0.15));
+}
+
+/* Navigation Links (Dark on White) */
+.header-one.header-white .nav-area ul {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-one.header-white .nav-area ul li.main-nav {
+  position: relative;
+}
+
+.header-one.header-white .nav-area ul li.main-nav > a {
+  color: #071431 !important;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 28px 0;
+  display: inline-block;
+  transition: color 0.25s ease;
+  text-decoration: none;
+}
+
+.header-one.header-white .nav-area ul li.main-nav:hover > a {
+  color: var(--color-primary, #0072ce) !important;
+}
+
+/* Dropdown Indicators (Chevron Arrows) */
+.header-one.header-white .nav-area ul li.has-dropdown::after,
+.header-one.header-white .nav-area ul li.has-dropdown.mega-menu > a::after {
+  color: #071431 !important;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.header-one.header-white .nav-area ul li.has-dropdown:hover::after,
+.header-one.header-white .nav-area ul li.has-dropdown.mega-menu:hover > a::after {
+  color: var(--color-primary, #0072ce) !important;
+}
+
+/* Language Selector */
+.header-one.header-white .select-area.language {
+  display: flex;
+  align-items: center;
+}
+
+.header-one.header-white .select-area.language .main-nav > a {
+  color: #071431 !important;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 8px 4px;
+}
+
+.header-one.header-white .select-area.language img {
+  filter: brightness(0) saturate(100%) !important;
+  opacity: 0.85;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.header-one.header-white .select-area.language .main-nav.project-a-after::after {
+  color: #071431 !important;
+}
+
+.header-one.header-white .select-area.language ul.submenu {
+  background: #ffffff !important;
+  border: 1px solid rgba(7, 20, 49, 0.08);
+  box-shadow: 0 10px 30px rgba(7, 20, 49, 0.12);
+  border-radius: 6px;
+  min-width: 90px;
+}
+
+.header-one.header-white .select-area.language ul.submenu li a {
+  color: #071431 !important;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+}
+
+.header-one.header-white .select-area.language ul.submenu li a:hover {
+  color: var(--color-primary, #0072ce) !important;
+  background: rgba(0, 114, 206, 0.06);
+}
+
+/* CTA Button */
+.header-one.header-white .button-wrapper-flex {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-one.header-white .button-wrapper-flex .rts-btn.btn-primary {
+  padding: 12px 28px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+/* Mobile Hamburger Menu Toggle Button */
+.header-one.header-white .menu-btn-toggle {
+  display: none;
+  cursor: pointer;
+  padding: 9px 10px;
+  border: 1px solid rgba(7, 20, 49, 0.14) !important;
+  border-radius: 6px;
+  background: transparent;
+  transition: all 0.2s ease;
+  line-height: 0;
+}
+
+.header-one.header-white .menu-btn-toggle:hover {
+  background: rgba(7, 20, 49, 0.05);
+  border-color: rgba(7, 20, 49, 0.28) !important;
+}
+
+.header-one.header-white .menu-btn-toggle svg rect {
+  fill: #071431 !important;
+  transition: fill 0.2s ease;
+}
+
+.header-one.header-white .menu-btn-toggle:hover svg rect {
+  fill: var(--color-primary, #0072ce) !important;
+}
+
+@media only screen and (max-width: 1199px) {
+  .header-one.header-white .nav-area {
+    display: none;
+  }
+
+  .header-one.header-white .menu-btn-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Dropdown Menus and Mega Menus on White Header */
+.header-one.header-white .rts-mega-menu {
+  background: #ffffff !important;
+  border-top: 3px solid var(--color-primary, #0072ce);
+  box-shadow: 0 16px 40px rgba(7, 20, 49, 0.14) !important;
+  border-radius: 0 0 8px 8px !important;
+}
+
+.header-one.header-white ul.submenu {
+  background: #ffffff !important;
+  border-top: 3px solid var(--color-primary, #0072ce);
+  box-shadow: 0 12px 30px rgba(7, 20, 49, 0.12) !important;
+  border-radius: 0 0 6px 6px;
+}
+
+.header-one.header-white ul.submenu li a {
+  color: #071431 !important;
+}
+
+.header-one.header-white ul.submenu li a:hover {
+  color: var(--color-primary, #0072ce) !important;
+  padding-left: 5px;
+}

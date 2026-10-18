@@ -1,0 +1,289 @@
+/* ==========================================================================
+   Vision & Mission Split Card Design (Logo Blue, Black, White)
+   ========================================================================== */
+
+.vm-split-wrapper {
+  margin-bottom: 50px;
+}
+
+.vm-split-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 45px rgba(6, 20, 38, 0.08);
+  border: 1px solid rgba(0, 77, 156, 0.1);
+  background: #ffffff;
+  min-height: 420px;
+}
+
+/* Background SVG for desktop diagonal split */
+.vm-bg-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content Grid */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  position: relative;
+  z-index: 2;
+  min-height: 420px;
+}
+
+/* Vision Side (Left) */
+.vm-side-vision {
+  padding: 45px 40px 45px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 82%;
+  position: relative;
+}
+
+.vm-side-vision .vm-heading-group {
+  margin-bottom: 20px;
+}
+
+.vm-side-vision .vm-eyebrow {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.vm-side-vision .vm-main-title {
+  display: block;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vm-side-vision .vm-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.94);
+  margin: 0 0 35px 0;
+  font-weight: 400;
+  max-width: 440px;
+}
+
+.vm-side-vision .vm-icon-vision-wrap {
+  margin-top: auto;
+}
+
+.vm-eye-icon {
+  width: 72px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+/* Mission Side (Right) */
+.vm-side-mission {
+  padding: 40px 50px 45px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.vm-target-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 25px;
+}
+
+.vm-target-icon {
+  width: 68px;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 4px 10px rgba(0, 77, 156, 0.15));
+}
+
+.vm-mission-content {
+  margin-top: auto;
+}
+
+.vm-side-mission .vm-eyebrow {
+  display: block;
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #071c36;
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.vm-side-mission .vm-main-title {
+  display: block;
+  font-size: 44px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #004d9c;
+  line-height: 1;
+  margin: 0 0 16px 0;
+}
+
+.vm-side-mission .vm-desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #334155;
+  margin: 0;
+  font-weight: 450;
+  max-width: 460px;
+}
+
+/* Companion Core Values Card (Logo Blue & Slate theme) */
+.vm-values-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px 36px;
+  border: 1px solid rgba(0, 77, 156, 0.1);
+  box-shadow: 0 10px 30px rgba(6, 20, 38, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.vm-values-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 220px;
+}
+
+.vm-values-icon-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #004d9c;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.vm-values-label h5 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #071c36;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.vm-values-label span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #0066cc;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: block;
+}
+
+.vm-values-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 28px;
+  flex: 1;
+}
+
+.vm-value-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #071c36;
+  transition: color 0.2s ease;
+}
+
+.vm-value-tag i {
+  color: #0066cc;
+  font-size: 15px;
+}
+
+.vm-value-tag:hover {
+  background: transparent;
+  color: #004d9c;
+  transform: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .vm-side-vision {
+    max-width: 88%;
+    padding: 35px 25px 35px 35px;
+  }
+  .vm-side-mission {
+    padding: 35px 35px 35px 45px;
+  }
+  .vm-side-vision .vm-main-title,
+  .vm-side-mission .vm-main-title {
+    font-size: 36px;
+  }
+  .vm-side-vision .vm-eyebrow,
+  .vm-side-mission .vm-eyebrow {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vm-split-card {
+    border-radius: 18px;
+    min-height: auto;
+  }
+  .vm-bg-svg {
+    display: none;
+  }
+  .vm-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    min-height: auto;
+  }
+  .vm-side-vision {
+    max-width: 100%;
+    padding: 35px 25px;
+    background: #004d9c;
+    border-radius: 16px;
+  }
+  .vm-side-mission {
+    max-width: 100%;
+    padding: 35px 25px;
+    background: #f8fafc;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 77, 156, 0.1);
+  }
+  .vm-values-card {
+    padding: 24px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
