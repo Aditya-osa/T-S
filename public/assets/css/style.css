@@ -11987,7 +11987,7 @@ Copyright (c) 2015 Daniel Eden
 
 /* Elements  */
 .rts-banner-area-one {
-  height: 910px;
+  height: 650px;
   background-image: url(../images/banner/01.webp);
   display: flex;
   align-items: center;
@@ -12001,7 +12001,7 @@ Copyright (c) 2015 Daniel Eden
 
 .banner-style-one-wrapper-inner {
   max-width: 630px;
-  padding-top: 120px;
+  padding-top: 20px;
   opacity: 0;
 }
 .banner-style-one-wrapper-inner .pre-title {
